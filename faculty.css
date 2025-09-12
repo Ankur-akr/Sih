@@ -1,0 +1,385 @@
+#faculty.css
+
+/* General Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #2f3640;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #40739e;
+}
+
+#darkToggle {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #718093;
+  color: #fff;
+  cursor: pointer;
+}
+
+#darkToggle:hover {
+  background: #44bd32;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.stat-card span {
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+/* Forms */
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Make normal buttons auto-sized instead of 100% */
+button {
+  width: auto;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #40739e;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Center specific buttons inside profile & announcements */
+.profile button,
+.announcements button {
+  display: block;
+  margin: 10px auto; /* centers button */
+}
+
+button:hover {
+  background: #273c75;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Analytics Progress Bars */
+.progress {
+  margin: 15px 0;
+}
+
+.bar {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 10px;
+  background: #44bd32;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Dark Mode */
+.dark {
+  background: #2f3640;
+  color: #f5f6fa;
+}
+
+.dark .sidebar {
+  background: #1e272e;
+}
+
+.dark section,
+.dark .stat-card {
+  background: #353b48;
+  color: #f5f6fa;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background: #40739e;
+  padding-left: 18px; /* little slide effect */
+  cursor: pointer;
+}
+.header-icons {
+  float: right;
+  margin-top: -35px;
+}
+
+.bell {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.bell:hover {
+  transform: scale(1.2);
+}
+section h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #40739e;
+  padding-bottom: 5px;
+}
+.stat-card:hover, section:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* New Faculty CSS */
+.live-management p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.live-management button {
+    background-color: #4CAF50;
+    color: white;
+}
+.live-management button.end-live {
+    background-color: #f44336;
+}
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.lecture-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.lecture-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.download-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.status-online {
+  color: green;
+}
+.status-offline {
+  color: red;
+}
+
+/* Hamburger Menu Icon */
+.menu-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px; /* Increase clickable area */
+}
+.menu-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-toggle .hamburger::before {
+    top: -8px;
+}
+.menu-toggle .hamburger::after {
+    top: 8px;
+}
+.dark .menu-toggle .hamburger,
+.dark .menu-toggle .hamburger::before,
+.dark .menu-toggle .hamburger::after {
+    background-color: #fff;
+}
+
+/* Collapsed Sidebar Logic (Desktop) */
+body.sidebar-collapsed .sidebar {
+    width: 80px;
+}
+body.sidebar-collapsed .sidebar h2,
+body.sidebar-collapsed .sidebar ul {
+    display: none;
+}
+body.sidebar-collapsed .main-content {
+    margin-left: 80px;
+}
+body.sidebar-collapsed .menu-toggle .hamburger {
+    transform: rotate(45deg);
+    background-color: transparent;
+}
+body.sidebar-collapsed .menu-toggle .hamburger::before {
+    transform: rotate(90deg) translate(8px);
+}
+body.sidebar-collapsed .menu-toggle .hamburger::after {
+    transform: rotate(0deg) translate(0, 0);
+}
+
+
+/* Responsive Logic (Mobile) */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -220px;
+        z-index: 1000;
+        top: 0;
+        min-height: 100vh;
+        height: 100%;
+    }
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    body.sidebar-collapsed .sidebar {
+        transform: translateX(220px);
+    }
+}
