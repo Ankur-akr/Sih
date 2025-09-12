@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body class="student-page">
+  <div class="sidebar">
+    <h2>🎓 Student</h2>
+    <ul>
+      <li><a href="#courses">📚 Courses</a></li>
+      <li><a href="#live-status-section">🎥 Live Classes</a></li>
+      <li><a href="#lecture-downloads">⬇ Downloads</a></li>
+      <li><a href="#deadlines">📝 Quizzes</a></li>
+      <li><a href="#announcements">🔔 Notifications</a></li>
+      <li><a href="#profile">⚙ Profile</a></li>
+    </ul>
+    <button class="toggle-mode">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+      <h1>Welcome, Student 👋</h1>
+      <div class="header-right">
+        <span class="bell">🔔</span>
+        <button class="logout-btn" id="logout-btn-student">➡️ Logout</button>
+      </div>
+    </header>
+
+    <section class="stats" id="courses">
+      <div class="card">📚 Courses Enrolled <span>5</span></div>
+      <div class="card">📝 Quizzes Attempted <span>8</span></div>
+      <div class="card">🎥 Live Sessions <span>3</span></div>
+      <div class="card">⬇ Downloads <span>12</span></div>
+    </section>
+
+    <section class="live-status-section" id="live-status-section">
+      <h2>🎥 Live Classes</h2>
+      <p>Status: <span id="live-status-student" class="status-offline">Offline</span></p>
+      <button id="watch-live-btn" class="watch-live-btn" style="display: none;">▶ Watch Live</button>
+    </section>
+
+    <section class="lecture-downloads" id="lecture-downloads">
+      <h2>⬇ Available Lectures</h2>
+      <ul id="student-lectures-list" class="lecture-list">
+        <li>Lecture 1 <button class="download-btn">Download</button></li>
+        <li>Lecture 2 <button class="download-btn">Download</button></li>
+      </ul>
+    </section>
+
+    <section class="progress">
+      <h2>📖 Course Progress</h2>
+      <div class="progress-item">
+        <p>Mathematics</p>
+        <div class="bar"><span style="width: 70%"></span></div>
+      </div>
+      <div class="progress-item">
+        <p>Physics</p>
+        <div class="bar"><span style="width: 40%"></span></div>
+      </div>
+      <div class="progress-item">
+        <p>Computer Science</p>
+        <div class="bar"><span style="width: 85%"></span></div>
+      </div>
+    </section>
+
+    <section class="deadlines" id="deadlines">
+      <h2>⏳ Upcoming Deadlines</h2>
+      <div class="deadline-card">Quiz: Algebra – <strong>2 days left</strong></div>
+      <div class="deadline-card">Assignment: Physics – <strong>5 days left</strong></div>
+    </section>
+
+    <section class="achievements">
+      <h2>🏆 Achievements</h2>
+      <div class="badge">⭐ Consistent Learner</div>
+      <div class="badge">🔥 Perfect Quiz Streak</div>
+      <div class="badge">📚 Course Master</div>
+    </section>
+
+    <section class="announcements" id="announcements">
+      <h2>📢 Announcements</h2>
+      <ul>
+        <li>📌 Live class on Monday at 10 AM</li>
+        <li>📌 New notes uploaded for Chemistry</li>
+      </ul>
+    </section>
+
+    <section class="profile" id="profile">
+      <h2>⚙ Profile</h2>
+      <img src="https://via.placeholder.com/100" alt="Profile Picture">
+      <h3>Student Name</h3>
+      <p>Email: student@example.com</p>
+      <button>Edit Profile</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
