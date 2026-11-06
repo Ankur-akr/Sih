@@ -11,7 +11,7 @@ The solution combines a lightweight virtual classroom platform with a proposed l
 ## 🏆 Smart India Hackathon 2025
 
 | Details | Information |
-|---|---|
+
 | Hackathon | Smart India Hackathon 2025 |
 | Problem Statement ID | SIH25101 |
 | Problem Statement | Remote Classroom for Rural Colleges |
